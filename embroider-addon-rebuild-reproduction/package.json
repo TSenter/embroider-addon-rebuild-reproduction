@@ -42,6 +42,8 @@
     "@rollup/plugin-babel": "^6.0.4",
     "babel-plugin-ember-template-compilation": "^2.2.1",
     "concurrently": "^8.2.2",
+    "ember-cli": "~5.3.0",
+    "ember-source": "~5.3.0",
     "ember-template-lint": "^5.13.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -62,6 +64,12 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./components/new-component.js": "./dist/_app_/components/new-component.js"
+    }
+  },
+  "peerDependencies": {
+    "ember-source": "~5.3.0"
   }
 }
