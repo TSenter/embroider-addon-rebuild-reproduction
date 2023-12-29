@@ -1,0 +1,3 @@
+packages:
+  - 'embroider-addon-rebuild-reproduction'
+  - 'test-app'
